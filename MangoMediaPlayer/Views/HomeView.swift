@@ -51,7 +51,7 @@ struct HomeView: View {
             }
             .navigationTitle("Mango")
             .navigationDestination(item: $selectedVideoURL) { url in
-                PlayerView(videoURL: url, isSubscribed: subscriptionManager.isSubscribed)
+                PlayerViewWrapper(videoURL: url, isSubscribed: subscriptionManager.isSubscribed)
             }
         }
     }

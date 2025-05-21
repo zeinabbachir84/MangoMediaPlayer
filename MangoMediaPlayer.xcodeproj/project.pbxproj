@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7C4F4B3C2DDC79B600D6A80E /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 7C4F4B3B2DDC79B600D6A80E /* KeychainAccess */; };
+		7C4F4B692DDDBAB900D6A80E /* GoogleInteractiveMediaAds in Frameworks */ = {isa = PBXBuildFile; productRef = 7C4F4B682DDDBAB900D6A80E /* GoogleInteractiveMediaAds */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C4F4B692DDDBAB900D6A80E /* GoogleInteractiveMediaAds in Frameworks */,
 				7C4F4B3C2DDC79B600D6A80E /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,6 +120,7 @@
 			name = MangoMediaPlayer;
 			packageProductDependencies = (
 				7C4F4B3B2DDC79B600D6A80E /* KeychainAccess */,
+				7C4F4B682DDDBAB900D6A80E /* GoogleInteractiveMediaAds */,
 			);
 			productName = MangoMediaPlayer;
 			productReference = 7C150F852DDC472500BD2A09 /* MangoMediaPlayer.app */;
@@ -202,6 +205,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				7C4F4B3A2DDC79B600D6A80E /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				7C4F4B672DDDBAB900D6A80E /* XCRemoteSwiftPackageReference "swift-package-manager-google-interactive-media-ads-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7C150F862DDC472500BD2A09 /* Products */;
@@ -648,6 +652,14 @@
 				kind = branch;
 			};
 		};
+		7C4F4B672DDDBAB900D6A80E /* XCRemoteSwiftPackageReference "swift-package-manager-google-interactive-media-ads-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-interactive-media-ads-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -655,6 +667,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7C4F4B3A2DDC79B600D6A80E /* XCRemoteSwiftPackageReference "KeychainAccess" */;
 			productName = KeychainAccess;
+		};
+		7C4F4B682DDDBAB900D6A80E /* GoogleInteractiveMediaAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C4F4B672DDDBAB900D6A80E /* XCRemoteSwiftPackageReference "swift-package-manager-google-interactive-media-ads-ios" */;
+			productName = GoogleInteractiveMediaAds;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
