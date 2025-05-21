@@ -95,7 +95,7 @@ extension AdManager: IMAAdsManagerDelegate {
         switch event.type {
         case .LOADED:
             adsManager.start()
-        case .ALL_ADS_COMPLETED:
+        case .ALL_ADS_COMPLETED: // ensure that the content resumes only after all ads in the pod have finished playing
             onAdFinished()
         default:
             break
@@ -112,7 +112,7 @@ extension AdManager: IMAAdsManagerDelegate {
     func adsManagerDidRequestContentPause(_ adsManager: IMAAdsManager) {
         print("🔴 Requesting content pause for ad")
         player.pause()
-        player.rate = 0.0 // Enforces no playback
+        player.rate = 0.0 // enforces no playback
     }
 
     func adsManagerDidRequestContentResume(_ adsManager: IMAAdsManager) {

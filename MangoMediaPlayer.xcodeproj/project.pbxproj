@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7C4F4B3C2DDC79B600D6A80E /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 7C4F4B3B2DDC79B600D6A80E /* KeychainAccess */; };
 		7C4F4B692DDDBAB900D6A80E /* GoogleInteractiveMediaAds in Frameworks */ = {isa = PBXBuildFile; productRef = 7C4F4B682DDDBAB900D6A80E /* GoogleInteractiveMediaAds */; };
+		7C4F4B742DDE536000D6A80E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C4F4B732DDE536000D6A80E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 		7C150F852DDC472500BD2A09 /* MangoMediaPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MangoMediaPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C150F942DDC472700BD2A09 /* MangoMediaPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MangoMediaPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C150F9E2DDC472700BD2A09 /* MangoMediaPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MangoMediaPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C4F4B732DDE536000D6A80E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -82,6 +84,7 @@
 		7C150F7C2DDC472500BD2A09 = {
 			isa = PBXGroup;
 			children = (
+				7C4F4B732DDE536000D6A80E /* LaunchScreen.storyboard */,
 				7C150F872DDC472500BD2A09 /* MangoMediaPlayer */,
 				7C150F972DDC472700BD2A09 /* MangoMediaPlayerTests */,
 				7C150FA12DDC472700BD2A09 /* MangoMediaPlayerUITests */,
@@ -224,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C4F4B742DDE536000D6A80E /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,9 +485,11 @@
 				DEVELOPMENT_TEAM = UUMT2NKYK8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Mango;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -511,9 +517,11 @@
 				DEVELOPMENT_TEAM = UUMT2NKYK8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Mango;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -15,7 +15,7 @@ class SubscriptionManager: ObservableObject {
         }
     }
 
-    private let keychain = Keychain(service: "com.yourapp.identifier")
+    private let keychain = Keychain(service: "com.MangoMediaPlayer.app")
 
     init() {
         self.isSubscribed = keychain["isSubscribed"] == "true"
