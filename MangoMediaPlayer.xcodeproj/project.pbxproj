@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7C4F4B3C2DDC79B600D6A80E /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 7C4F4B3B2DDC79B600D6A80E /* KeychainAccess */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		7C150F952DDC472700BD2A09 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C4F4B3C2DDC79B600D6A80E /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = MangoMediaPlayer;
 			packageProductDependencies = (
+				7C4F4B3B2DDC79B600D6A80E /* KeychainAccess */,
 			);
 			productName = MangoMediaPlayer;
 			productReference = 7C150F852DDC472500BD2A09 /* MangoMediaPlayer.app */;
@@ -121,6 +127,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C150FAB2DDC472700BD2A09 /* Build configuration list for PBXNativeTarget "MangoMediaPlayerTests" */;
 			buildPhases = (
+				B6C5651BD3F97B63B83C826B /* [CP] Check Pods Manifest.lock */,
 				7C150F902DDC472700BD2A09 /* Sources */,
 				7C150F912DDC472700BD2A09 /* Frameworks */,
 				7C150F922DDC472700BD2A09 /* Resources */,
@@ -134,8 +141,6 @@
 				7C150F972DDC472700BD2A09 /* MangoMediaPlayerTests */,
 			);
 			name = MangoMediaPlayerTests;
-			packageProductDependencies = (
-			);
 			productName = MangoMediaPlayerTests;
 			productReference = 7C150F942DDC472700BD2A09 /* MangoMediaPlayerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -144,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C150FAE2DDC472700BD2A09 /* Build configuration list for PBXNativeTarget "MangoMediaPlayerUITests" */;
 			buildPhases = (
+				E5421417D169C053229DCE8B /* [CP] Check Pods Manifest.lock */,
 				7C150F9A2DDC472700BD2A09 /* Sources */,
 				7C150F9B2DDC472700BD2A09 /* Frameworks */,
 				7C150F9C2DDC472700BD2A09 /* Resources */,
+				FD2A936084709C1A84841356 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,8 +164,6 @@
 				7C150FA12DDC472700BD2A09 /* MangoMediaPlayerUITests */,
 			);
 			name = MangoMediaPlayerUITests;
-			packageProductDependencies = (
-			);
 			productName = MangoMediaPlayerUITests;
 			productReference = 7C150F9E2DDC472700BD2A09 /* MangoMediaPlayerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -195,6 +200,9 @@
 			);
 			mainGroup = 7C150F7C2DDC472500BD2A09;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7C4F4B3A2DDC79B600D6A80E /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7C150F862DDC472500BD2A09 /* Products */;
 			projectDirPath = "";
@@ -230,6 +238,74 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B6C5651BD3F97B63B83C826B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MangoMediaPlayerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5421417D169C053229DCE8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MangoMediaPlayer-MangoMediaPlayerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD2A936084709C1A84841356 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MangoMediaPlayer-MangoMediaPlayerUITests/Pods-MangoMediaPlayer-MangoMediaPlayerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MangoMediaPlayer-MangoMediaPlayerUITests/Pods-MangoMediaPlayer-MangoMediaPlayerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MangoMediaPlayer-MangoMediaPlayerUITests/Pods-MangoMediaPlayer-MangoMediaPlayerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7C150F812DDC472500BD2A09 /* Sources */ = {
@@ -322,7 +398,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -380,7 +456,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -395,6 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UUMT2NKYK8;
@@ -410,8 +487,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MangoMediaPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MangoMediaPlayer.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -423,6 +501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UUMT2NKYK8;
@@ -440,6 +519,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.MangoMediaPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -558,6 +638,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7C4F4B3A2DDC79B600D6A80E /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7C4F4B3B2DDC79B600D6A80E /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C4F4B3A2DDC79B600D6A80E /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7C150F7D2DDC472500BD2A09 /* Project object */;
 }
