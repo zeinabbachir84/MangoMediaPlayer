@@ -31,6 +31,10 @@ This project is divided into several core components:
   - **Post-roll** ads (play after content ends)
 - After a **mid-roll ad**, the main video **resumes exactly where it left off**
 - Custom ad container with support for skippable and non-skippable formats
+- **Note:**  
+  - Don’t fast-forward or scrub ahead past the mid-roll cue point—if you accelerate the video, the SDK may skip the mid-roll ad.  
+  - You may not always see an ad on every launch. Google’s servers sometimes won’t serve another ad if your device/user has already viewed one recently (campaign-dependent). To test again, you’ll need to delete and reinstall the app so that a fresh ad request is made.
+
 
 ### 🔐 User Subscription State
 
