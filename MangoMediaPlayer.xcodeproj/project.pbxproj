@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7C4F4B3C2DDC79B600D6A80E /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 7C4F4B3B2DDC79B600D6A80E /* KeychainAccess */; };
+		7C4F4B582DDC7C9100D6A80E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C4F4B512DDC7C9100D6A80E /* Assets.xcassets */; };
 		7C4F4B692DDDBAB900D6A80E /* GoogleInteractiveMediaAds in Frameworks */ = {isa = PBXBuildFile; productRef = 7C4F4B682DDDBAB900D6A80E /* GoogleInteractiveMediaAds */; };
 		7C4F4B742DDE536000D6A80E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C4F4B732DDE536000D6A80E /* LaunchScreen.storyboard */; };
+		7C4F4B772DDEF6C600D6A80E /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F4B762DDEF6C400D6A80E /* Color+Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +35,9 @@
 		7C150F852DDC472500BD2A09 /* MangoMediaPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MangoMediaPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C150F942DDC472700BD2A09 /* MangoMediaPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MangoMediaPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C150F9E2DDC472700BD2A09 /* MangoMediaPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MangoMediaPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C4F4B512DDC7C9100D6A80E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C4F4B732DDE536000D6A80E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7C4F4B762DDEF6C400D6A80E /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -84,7 +88,7 @@
 		7C150F7C2DDC472500BD2A09 = {
 			isa = PBXGroup;
 			children = (
-				7C4F4B732DDE536000D6A80E /* LaunchScreen.storyboard */,
+				7C4F4B752DDE574C00D6A80E /* Resources */,
 				7C150F872DDC472500BD2A09 /* MangoMediaPlayer */,
 				7C150F972DDC472700BD2A09 /* MangoMediaPlayerTests */,
 				7C150FA12DDC472700BD2A09 /* MangoMediaPlayerUITests */,
@@ -100,6 +104,16 @@
 				7C150F9E2DDC472700BD2A09 /* MangoMediaPlayerUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7C4F4B752DDE574C00D6A80E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7C4F4B762DDEF6C400D6A80E /* Color+Theme.swift */,
+				7C4F4B512DDC7C9100D6A80E /* Assets.xcassets */,
+				7C4F4B732DDE536000D6A80E /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C4F4B742DDE536000D6A80E /* LaunchScreen.storyboard in Resources */,
+				7C4F4B582DDC7C9100D6A80E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C4F4B772DDEF6C600D6A80E /* Color+Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

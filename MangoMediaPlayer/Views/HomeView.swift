@@ -18,8 +18,9 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Color(red: 240/255, green: 240/255, blue: 240/255)
-                    .ignoresSafeArea() // full screen light gray background
+                Color.backgroundGray
+                    .ignoresSafeArea()
+                
                 ScrollView {
                     VStack(alignment: .leading, spacing: 20) {
                         
