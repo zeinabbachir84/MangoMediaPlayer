@@ -44,9 +44,21 @@ This project is divided into several core components:
 - Swift 5.9+
 - Google IMA SDK
 
+## 🧩 Dependencies
+
+- [Google IMA SDK](https://github.com/googleads/googleads-ima-ios) (via Swift Package Manager)
+- AVFoundation (built-in)
+- UIKit (built-in)
+- SwiftKeychainWrapper (optional helper for Keychain access)
+  
 ## 🛠 Setup Instructions
 
 1. Clone the repo:
    ```bash
    git clone https://github.com/zeinabbachir84/MangoMediaPlayer.git
    cd MangoMediaPlayer
+
+2. Open the project in Xcode:
+open MangoMediaPlayer.xcodeproj
+
+3. Build and run the app on an iOS simulator or device.
